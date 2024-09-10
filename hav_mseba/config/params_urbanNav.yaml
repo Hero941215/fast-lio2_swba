@@ -1,0 +1,11 @@
+hav_mseba:
+
+  # Topics
+  pointCloudTopic: "/cloud_registered_lidar"    # Point cloud data /os1_cloud_node/points /velodyne_points
+  odomPoseTopic:   "/LidarOdometry"
+
+  # Sensor Settings                      'velodyne' 'rslidar' 'ouster' 'dataset' or 'other'. other will use loam method to compute reltimestamp
+  sensorType: other                    
+
+  # Param path for Be
+  beParamsPath: "/home/mtcjyb/hav_mseba_ws/src/hav_mseba/config/be/Be_outdoor.yaml"       # 室外场景： Be_outdoor.yaml  室内场景： Be_indoor.yaml
